@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
     <script async
-        src="https://maps.google.com/maps/api/js?key=AIzaSyDwAwUMfrC-2dlA5QnavOyWqwHv663UZSs&libraries=places,drawing&callback=iniciarMapa"></script>
+        src="https://maps.google.com/maps/api/js?key=AIzaSyDwAwUMfrC-2dlA5QnavOyWqwHv663UZSs&libraries=places,drawing,marker&callback=iniciarMapa"></script>
 </head>
 
 <body>
@@ -17,11 +17,12 @@
                 <button id="route-btn">Calcular Rota</button>
                 <button id="confirm-btn">Confirmar</button>
             </div>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Busque o endereço...">
+            </div>
         </div>
 
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Busque o endereço...">
-        </div>
+        
     </div>
 </body>
 
