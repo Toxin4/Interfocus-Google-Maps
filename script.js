@@ -115,7 +115,7 @@ function definirSearchBox() {
             markerContent.innerHTML = "PESQUISA";
             markerContent.classList.add("marker");
 
-
+            // adiciona um marcador customizavel no mapa quando pesquisa um endereço
             searchMarker = new google.maps.marker.AdvancedMarkerElement({
                 map: map,
                 position: place.geometry.location,
