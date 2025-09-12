@@ -53,7 +53,9 @@ function adicionarPontoRota(posicao) {
 
     if (routePoints.length < 2) return;
 
+    // Define o local de partida
     const origin = routePoints[0];
+    //Define o destino
     const destino = routePoints[routePoints.length - 1];
     const waypoints = routePoints.slice(1, -1).map((point) => ({ location: point, stopover: true }));
     const request = {
